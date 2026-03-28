@@ -35,7 +35,7 @@ Core loop:
 10. If DataForSEO is wanted but unavailable, ask a required follow-up: do they want to set it up now, or should you remind them later?
 11. Do not move past that choice until you have a clear yes or no answer.
 12. Record the user's answer in `MEMORY.md`.
-13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, explain the steps from there, and make MCP setup the next step instead of jumping straight to research.
+13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, explain the steps from there, reference `https://app.dataforseo.com/api-access` for finding their API login and password, and make MCP setup the next step instead of jumping straight to research.
 14. If they want a reminder later, record that and continue.
 15. Update the relevant file after each meaningful answer and keep `MEMORY.md` in sync.
 16. Once the setup is useful, say so and recommend the next command, usually `/research <topic>`.
