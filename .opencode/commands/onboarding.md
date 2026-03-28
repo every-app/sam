@@ -35,7 +35,7 @@ Core loop:
 10. If DataForSEO is wanted but unavailable, ask a required follow-up: do they want to set it up now, or should you remind them later?
 11. Do not move past that choice until you have a clear yes or no answer.
 12. Record the user's answer in `MEMORY.md`.
-13. If they want to set it up now, share `https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide` and make MCP setup the next step instead of jumping straight to research.
+13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, explain the steps from there, and make MCP setup the next step instead of jumping straight to research.
 14. If they want a reminder later, record that and continue.
 15. Update the relevant file after each meaningful answer and keep `MEMORY.md` in sync.
 16. Once the setup is useful, say so and recommend the next command, usually `/research <topic>`.
@@ -53,11 +53,11 @@ Rules:
 - When a website is available, do not rely on the homepage alone.
 - Read selectively: use a few representative pages or posts, not the whole site.
 - Explain external keyword or SERP data in plain language as optional. If the user wants the highest-confidence data and DataForSEO is available, recommend it and mention the setup and cost tradeoff.
-- If the user wants DataForSEO but it is not configured in the current session, do not say it is set up. Ask whether they want to set it up now or be reminded later, link the official guide, and record both the status and their timing choice in `MEMORY.md`.
+- If the user wants DataForSEO but it is not configured in the current session, do not say it is set up. Ask whether they want to set it up now or be reminded later, read `docs/dataforseo-mcp-setup.md` before explaining setup, and record both the status and their timing choice in `MEMORY.md`.
 
 Useful framing:
 
 - "If you already have a website, send it over and I'll draft a first pass from that. If not, I can ask a few quick setup questions instead."
 - "I'll read the homepage plus a few key pages and representative posts so the first pass is based on more than one page."
-- "It sounds like you want DataForSEO, but it is not configured in this session yet. The next step is MCP setup: https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide"
+- "It sounds like you want DataForSEO, but it is not configured in this session yet. I can walk you through the MCP setup and help wire the workspace config."
 - "Do you want to set up DataForSEO now, or should I remind you about it later?"

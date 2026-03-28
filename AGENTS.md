@@ -26,6 +26,7 @@ This project is a standalone, OpenCode-native SEO content workspace.
 ## Load On Demand
 
 - `MEMORY.md`
+- `docs/dataforseo-mcp-setup.md`
 - `context/user-notes.md`
 - `context/site-profile.md`
 - `context/brand-voice.md`
@@ -49,7 +50,7 @@ This project is a standalone, OpenCode-native SEO content workspace.
 - When a draft exists, prefer `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before final optimization advice.
 - Use `node ./scripts/normalize-draft.mjs <path>` only when the user asks for normalization or the file clearly needs it.
 - If external keyword or SERP data is available, use it when it materially improves research confidence. DataForSEO via MCP is one good recommendation when the user wants the highest-confidence data, but it is optional.
-- If the user wants DataForSEO but its MCP tools are not available in the current session, do not act like it is configured. Ask whether they want to set it up now or be reminded later, record that answer in `MEMORY.md`, and point them to `https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide`.
+- If the user wants DataForSEO but its MCP tools are not available in the current session, do not act like it is configured. Ask whether they want to set it up now or be reminded later, record that answer in `MEMORY.md`, and read `docs/dataforseo-mcp-setup.md` before explaining the setup steps.
 
 ## Agents
 
