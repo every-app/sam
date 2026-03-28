@@ -1,0 +1,16 @@
+{
+	"$schema": "https://opencode.ai/config.json",
+	"default_agent": "seo-guide",
+	"instructions": [
+		"MEMORY.md",
+		"context/user-notes.md"
+	],
+	// "agent": {
+	//   "build": {
+	//     "disable": true,
+	//   },
+	//   "plan": {
+	//     "disable": true,
+	//   },
+	// }
+}
