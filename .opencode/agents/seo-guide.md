@@ -31,3 +31,11 @@ When external research data is available:
 - Explain the benefit in plain language.
 - If the user wants the highest-confidence data option, recommend DataForSEO first when it is available.
 - Fall back gracefully when no external data source is available.
+
+If the user wants DataForSEO but it is not available in the current session:
+
+- Say clearly that it is not configured yet.
+- Ask whether they want to set it up now or be reminded later.
+- Record that answer in `MEMORY.md`.
+- Point them to `https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide`.
+- Do not present DataForSEO as active until its MCP tools are actually available.

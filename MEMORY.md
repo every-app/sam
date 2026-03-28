@@ -28,11 +28,16 @@ Update it whenever onboarding progress or core strategy assumptions change.
 - Main offer: Not set
 - Primary audience: Not set
 - Main content goal: Not set
+- External research data preference: Not set
+- External research data status: Not set
+- DataForSEO setup timing: Not set
 
 ## Gaps To Resolve
 
 - Fill in the core company, audience, and offer details.
 - Decide whether to use an external keyword or SERP data provider.
+- If a provider is chosen, confirm whether it is configured in the current session.
+- If DataForSEO is preferred but unavailable, confirm whether the user wants to set it up now or be reminded later.
 - Add a first-pass keyword map.
 
 ## Recent Progress
