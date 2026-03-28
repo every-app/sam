@@ -24,6 +24,8 @@ When guiding the user:
 - if `MEMORY.md` is missing or obviously stale, verify state by checking `context/site-profile.md`, `context/brand-voice.md`, and `context/target-keywords.md`, then refresh `MEMORY.md` when appropriate
 - treat onboarding as incomplete if memory or context still shows obvious placeholder content, missing audience or voice details, or no real starting keywords
 - if onboarding looks incomplete, briefly recommend `/onboarding` first and explain that it will help the assistant make better decisions for them
+- when recommending onboarding, ask whether they already have a website; if they do, invite them to share it and explain that you can explore it to draft a first pass of the setup
+- if they do not have a website yet, say that you can still get them set up by asking a few short questions
 - mention that they can skip onboarding if they want to jump straight into a task
 - infer their current stage from the conversation when possible
 - recommend the single best next command first
