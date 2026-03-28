@@ -1,53 +1,24 @@
 # SEO Workbench
 
-SEO Workbench is a small, OpenCode-native content operations workspace for research, drafting, rewriting, and optimization.
+SEO Workbench is a small, OpenCode-native workspace for research, drafting, rewriting, and optimization.
 
-It intentionally avoids the complexity of the original SEO Machine:
+The flow is simple:
 
-- no Python
-- no hidden agent chains
-- no Claude-specific `.claude` conventions
-- no mandatory CMS integration
-- no analytics vendor lock-in
-
-The core idea is simple:
-
-1. Research a topic into a structured brief.
-2. Write or rewrite an article from that brief.
-3. Run a lightweight JS analyzer for deterministic checks.
-4. Improve the draft explicitly, not through hidden automation.
-
-## Structure
-
-```text
-seo-workbench/
-  AGENTS.md
-  MEMORY.md
-  .opencode/
-    commands/
-    agents/
-  context/
-  templates/
-  scripts/
-  lib/analyzers/
-  research/
-  drafts/
-  review-required/
-  published/
-```
+1. Research a topic into a brief.
+2. Write or rewrite a draft.
+3. Run the JS analyzer for deterministic checks.
+4. Optimize the draft and prepare a handoff if needed.
 
 ## OpenCode Usage
 
-Run OpenCode from this directory if you want these commands and rules to apply:
+Run OpenCode from this directory:
 
 ```bash
 cd seo-workbench
 opencode
 ```
 
-This workspace defaults to a friendly `seo-guide` primary agent and hides the standard `build` and `plan` agents to keep the experience simpler while the workflow is still taking shape.
-
-If a keyword or SERP data integration is available in your OpenCode session, the guide can use it to improve research with signals like search volume, competition or difficulty, related queries, and SERP patterns. DataForSEO via MCP is one example, but the workflow still works without any external data provider.
+Start with `/onboarding` unless you want to jump straight into a task.
 
 Available commands:
 
@@ -59,11 +30,25 @@ Available commands:
 - `/optimize <draft path>`
 - `/publish <draft path>`
 
-`/onboarding` is the best place to start. It helps fill in company context, brand voice, target keywords, and an optional external research data preference without making the user answer every strategy question from scratch.
+If external keyword or SERP data is available, the guide can use it to improve research. DataForSEO via MCP is one good option when you want the highest-confidence data, but the workspace does not depend on it.
+
+## Layout
+
+```text
+seo-workbench/
+  AGENTS.md
+  MEMORY.md
+  .opencode/
+  context/
+  templates/
+  scripts/
+  research/
+  drafts/
+  review-required/
+  published/
+```
 
 ## JS Utilities
-
-These scripts replace the most useful deterministic Python checks from SEO Machine.
 
 Analyze a draft:
 
@@ -77,9 +62,9 @@ Normalize punctuation and invisible characters:
 node ./scripts/normalize-draft.mjs ./drafts/example.md
 ```
 
-## What To Customize First
+## Customize First
 
-Before using the workspace for real content, update:
+Core context:
 
 - `context/site-profile.md`
 - `context/brand-voice.md`
@@ -90,12 +75,11 @@ Optional advanced setup:
 
 - `context/internal-links.md`
 
-The easiest way to do that is to start OpenCode in this folder and run `/onboarding`.
+The easiest path is to run `/onboarding`.
 
 ## Design Principles
 
 - Keep orchestration in commands and docs, not hidden prompt magic.
-- Prefer explicit files as outputs for every stage.
+- Prefer explicit files as outputs.
 - Use subagents for focused review only.
 - Keep integrations optional and replaceable.
-- Favor a small number of excellent workflows over a large number of half-automated ones.

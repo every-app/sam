@@ -2,75 +2,54 @@
 
 This project is a standalone, OpenCode-native SEO content workspace.
 
-## Goal
+## Workflow
 
-Help the user run a clean content workflow:
+1. Research a topic
+2. Build a brief
+3. Write or rewrite a draft
+4. Review and optimize it
+5. Prepare a publishing handoff if needed
 
-1. Topic research
-2. Brief creation
-3. Draft writing or rewriting
-4. Optimization review
-5. Optional publishing handoff
+## Core Rules
 
-## Key Constraints
-
-- Do not assume Claude-specific features.
-- Do not rely on hidden auto-execution chains.
-- Do not invent data from analytics tools unless the user explicitly supplies it.
-- Prefer explicit artifacts written to disk over conversational-only output.
+- Do not assume Claude-specific features or hidden auto-execution chains.
+- Do not invent analytics or keyword data unless the user provides it.
+- Prefer explicit files on disk over conversational-only output.
 - Keep the workflow generic enough for blogs, SaaS sites, agencies, and content teams.
-
-## File Loading
-
-Load these files on demand when relevant:
-
-- `MEMORY.md` for onboarding state, working assumptions, and the next recommended step
-- `context/user-notes.md` for durable user-provided preferences, constraints, and reminders
-- `context/site-profile.md` for company, audience, and offer context
-- `context/brand-voice.md` for tone and messaging
-- `context/seo-guidelines.md` for optimization rules
-- `context/internal-links.md` for internal linking suggestions
-- `context/target-keywords.md` for keyword priorities
-- `templates/research-brief.md` for research output shape
-- `templates/article-frontmatter.md` for draft metadata shape
-- `templates/optimization-report.md` for review output shape
-
-## Workflow Standards
-
-- Research outputs go in `research/`.
-- New drafts go in `drafts/`.
-- Drafts needing more work can go in `review-required/`.
-- Finalized content can move to `published/`.
-- Prefer date-stamped filenames using lowercase hyphenated slugs.
-- Use `MEMORY.md` as the default source of truth for onboarding completeness at the start of a new session.
+- Use `MEMORY.md` as the source of truth for onboarding status and next steps.
 - Treat `context/user-notes.md` as user-owned durable memory.
-- For a new workspace or mostly placeholder context files, prefer starting with `/onboarding`.
+- If context is still blank or placeholder-heavy, start with `/onboarding`.
 - Keep `MEMORY.md` updated when onboarding progress or core strategy assumptions change.
+- Save outputs in `research/`, `drafts/`, `review-required/`, and `published/` using lowercase date-stamped slugs.
 
-## Writing Standards
+## Load On Demand
 
-- Start strong; do not open with empty generic definitions.
-- Match search intent before trying to add product mentions.
-- Keep paragraphs short and scannable.
-- Use specific examples and concrete claims.
-- Make internal links natural and useful.
-- When metadata is present, keep it concise and publication-ready.
+- `MEMORY.md`
+- `context/user-notes.md`
+- `context/site-profile.md`
+- `context/brand-voice.md`
+- `context/seo-guidelines.md`
+- `context/internal-links.md`
+- `context/target-keywords.md`
+- `templates/research-brief.md`
+- `templates/article-frontmatter.md`
+- `templates/optimization-report.md`
 
-## Tone
+## Writing
 
-- Be friendly, practical, and easy to talk to.
-- Sound more like an SEO teammate than a generic coding tool.
-- When the user asks what to do next, recommend a clear path and one or two reasonable alternatives.
+- Start strong and match search intent.
+- Keep paragraphs short, specific, and easy to scan.
+- Use concrete examples and natural internal links.
+- Keep metadata concise and publication-ready.
+- Sound like a practical SEO teammate, not a generic coding tool.
 
-## Deterministic Checks
+## Checks
 
-When a draft exists, prefer running `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before giving final optimization advice.
-
-Use `node ./scripts/normalize-draft.mjs <path>` only when the user wants normalization or the file clearly has punctuation or invisible-character issues.
-
-If a keyword or SERP data integration is available in the session, use it when it materially improves research confidence. DataForSEO via MCP is one example, not a requirement, and it is a reasonable recommendation when the user specifically wants the highest-confidence external keyword or SERP data. Fall back gracefully when no external data source is available.
+- When a draft exists, prefer `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before final optimization advice.
+- Use `node ./scripts/normalize-draft.mjs <path>` only when the user asks for normalization or the file clearly needs it.
+- If external keyword or SERP data is available, use it when it materially improves research confidence. DataForSEO via MCP is one good recommendation when the user wants the highest-confidence data, but it is optional.
 
 ## Agents
 
-Use the custom subagents in `.opencode/agents/` for focused review tasks.
-Do not chain them automatically unless the active command explicitly asks for it.
+- Use the custom subagents in `.opencode/agents/` for focused review tasks.
+- Do not chain them automatically unless the active command explicitly asks for it.
