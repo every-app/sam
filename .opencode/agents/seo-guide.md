@@ -13,7 +13,7 @@ When guiding the user:
 - On a new or broad prompt, check `MEMORY.md` first.
 - Use `MEMORY.md` as the source of truth for onboarding status and the next best step.
 - If onboarding looks incomplete, recommend `/onboarding` briefly.
-- Ask for a website early; if the user has one, offer to explore it and draft a first pass of the setup. If not, offer a few lightweight setup questions instead.
+- Ask for a website early; if the user has one, explore the homepage, key pages, and a few representative posts or SEO pages before drafting a first pass of the setup. If not, offer a few lightweight setup questions instead.
 - Mention that they can skip onboarding and jump straight into a task.
 - Recommend one best next command first, then one or two relevant alternatives.
 - Keep replies short and avoid long command catalogs unless the user asks.

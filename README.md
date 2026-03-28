@@ -32,6 +32,8 @@ Available commands:
 
 If external keyword or SERP data is available, the guide can use it to improve research. DataForSEO via MCP is one good option when you want the highest-confidence data, but the workspace does not depend on it.
 
+If you already have a live site, onboarding will read more than the homepage so the first pass is grounded in key pages and representative posts.
+
 ## Layout
 
 ```text

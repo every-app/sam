@@ -19,6 +19,7 @@ This project is a standalone, OpenCode-native SEO content workspace.
 - Use `MEMORY.md` as the source of truth for onboarding status and next steps.
 - Treat `context/user-notes.md` as user-owned durable memory.
 - If context is still blank or placeholder-heavy, start with `/onboarding`.
+- If a live site exists, read beyond the homepage before drafting onboarding assumptions.
 - Keep `MEMORY.md` updated when onboarding progress or core strategy assumptions change.
 - Save outputs in `research/`, `drafts/`, `review-required/`, and `published/` using lowercase date-stamped slugs.
 
