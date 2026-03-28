@@ -68,7 +68,7 @@ When a draft exists, prefer running `node ./scripts/analyze-draft.mjs <path> --k
 
 Use `node ./scripts/normalize-draft.mjs <path>` only when the user wants normalization or the file clearly has punctuation or invisible-character issues.
 
-If DataForSEO MCP tools are available in the session, prefer them for higher-confidence keyword research and SERP analysis. Do not require them for the basic workflow; fall back gracefully when they are unavailable.
+If a keyword or SERP data integration is available in the session, use it when it materially improves research confidence. DataForSEO via MCP is one example, not a requirement, and it is a reasonable recommendation when the user specifically wants the highest-confidence external keyword or SERP data. Fall back gracefully when no external data source is available.
 
 ## Agents
 

@@ -47,7 +47,7 @@ opencode
 
 This workspace defaults to a friendly `seo-guide` primary agent and hides the standard `build` and `plan` agents to keep the experience simpler while the workflow is still taking shape.
 
-If a DataForSEO MCP server is available in your OpenCode session, the guide can use it as a keyword and SERP data provider for things like search volume, competition or difficulty signals, and related query research. That can lead to better informed keyword decisions, but the workflow still works without it.
+If a keyword or SERP data integration is available in your OpenCode session, the guide can use it to improve research with signals like search volume, competition or difficulty, related queries, and SERP patterns. DataForSEO via MCP is one example, but the workflow still works without any external data provider.
 
 Available commands:
 
@@ -59,7 +59,7 @@ Available commands:
 - `/optimize <draft path>`
 - `/publish <draft path>`
 
-`/onboarding` is the best place to start. It helps fill in company context, brand voice, target keywords, and an optional DataForSEO setup decision without making the user answer every strategy question from scratch.
+`/onboarding` is the best place to start. It helps fill in company context, brand voice, target keywords, and an optional external research data preference without making the user answer every strategy question from scratch.
 
 ## JS Utilities
 

@@ -45,13 +45,14 @@ When doing the work:
 - update `MEMORY.md` when onboarding progress or foundational strategy assumptions materially change
 - when the user shares a durable preference or reminder they want kept, store it in `context/user-notes.md`
 
-When DataForSEO MCP is available:
+When external research data integrations are available:
 
-- prefer it for keyword research, related terms, SERP patterns, ranking context, and search-intent validation
-- use it to make research briefs and optimization advice more precise and defensible
-- mention DataForSEO-backed findings naturally when they materially improve the recommendation
-- do not block on it; if the MCP tools are unavailable, fall back to normal web research and judgment
-- when recommending DataForSEO, explain it simply as a data provider for keyword and SERP research, not just a tool name
+- prefer them for keyword research, related terms, SERP patterns, ranking context, and search-intent validation
+- use them to make research briefs and optimization advice more precise and defensible
+- mention data-backed findings naturally when they materially improve the recommendation
+- do not block on them; if they are unavailable, fall back to normal web research and judgment
+- when relevant, explain providers like DataForSEO simply as optional data sources for keyword and SERP research, not as defaults the workspace depends on
+- if the user asks for the highest-quality or highest-confidence external data option, recommend DataForSEO first when it is available
 - make the user-facing value concrete, for example search volume, competition or difficulty signals, and better decisions about what to target at the company's current stage
 
 Keep answers short, helpful, and human.

@@ -8,8 +8,8 @@ Before writing, load only the relevant project context files from `context/`.
 
 Requirements:
 
-- If DataForSEO MCP tools are available, use them for keyword variations, volume or difficulty signals, and SERP pattern research before finalizing the brief.
-- If DataForSEO MCP tools are not available, continue with normal web research and judgment.
+- If an external keyword or SERP data source is available, use it for keyword variations, volume or difficulty signals, and SERP pattern research before finalizing the brief.
+- If no external data source is available, continue with normal web research and judgment.
 - Identify primary keyword, secondary keywords, and search intent.
 - Summarize likely competitor angles and common SERP patterns.
 - Propose a differentiated angle for this project.

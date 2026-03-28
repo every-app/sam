@@ -48,7 +48,7 @@ Response rules:
 - If they have a draft, point them to `/optimize` or `@editor` depending on the need.
 - If they are near final, point them to `/publish`.
 - If the stage is unclear, give a short beginner-friendly overview of the workflow and the best place to start.
-- If DataForSEO MCP tools are available and the user is making a research decision, mention that DataForSEO-backed research is an optional higher-confidence path, not a requirement.
+- If an external keyword or SERP data source is available and the user is making a research decision, mention that data-backed research is an optional higher-confidence path, not a requirement.
 - Always include at least one alternative path when it would be genuinely useful, for example starting fresh vs rewriting an existing article.
 - Keep the answer practical and concise.
 - Prefer guidance and decision support over explanation of repo structure.
