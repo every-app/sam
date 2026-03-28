@@ -6,9 +6,10 @@ This project is a standalone, OpenCode-native SEO content workspace.
 
 1. Research a topic
 2. Build a brief
-3. Write or rewrite a draft
-4. Review and optimize it
-5. Prepare a publishing handoff if needed
+3. Draft or revise the article
+4. Independently review substantial drafts
+
+Substantial draft work means a new full draft, a full-article rewrite, or structural changes across multiple sections. It does not mean small local edits.
 
 ## Core Rules
 
@@ -21,11 +22,13 @@ This project is a standalone, OpenCode-native SEO content workspace.
 - If context is still blank or placeholder-heavy, start with `/onboarding`.
 - If a live site exists, read beyond the homepage before drafting onboarding assumptions.
 - Keep `MEMORY.md` updated when onboarding progress or core strategy assumptions change.
-- Save outputs in `research/`, `drafts/`, `review-required/`, and `published/` using lowercase date-stamped slugs.
+- Save outputs in `research/`, `drafts/`, and `review-required/` using lowercase date-stamped slugs.
 
 ## Load On Demand
 
 - `MEMORY.md`
+- `docs/article-writing.md`
+- `docs/article-review.md`
 - `docs/dataforseo-mcp-setup.md`
 - `context/user-notes.md`
 - `context/site-profile.md`
@@ -35,7 +38,6 @@ This project is a standalone, OpenCode-native SEO content workspace.
 - `context/target-keywords.md`
 - `templates/research-brief.md`
 - `templates/article-frontmatter.md`
-- `templates/optimization-report.md`
 
 ## Writing
 
@@ -54,5 +56,7 @@ This project is a standalone, OpenCode-native SEO content workspace.
 
 ## Agents
 
-- Use the custom subagents in `.opencode/agents/` for focused review tasks.
-- Do not chain them automatically unless the active command explicitly asks for it.
+- `seo-guide` is the user-facing orchestrator.
+- Use `article-writer` for net-new drafts and major rewrites.
+- Use `seo-reviewer` as an independent fresh-context review after new drafts and major restructures.
+- Skip the review loop for tiny edits.

@@ -38,11 +38,12 @@ Core loop:
 13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, explain the steps from there, reference `https://app.dataforseo.com/api-access` for finding their API login and password, and make MCP setup the next step instead of jumping straight to research.
 14. If they want a reminder later, record that and continue.
 15. Update the relevant file after each meaningful answer and keep `MEMORY.md` in sync.
-16. Once the setup is useful, say so and recommend the next command, usually `/research <topic>`.
+16. Once the setup is useful, say so and recommend the next step, usually researching a topic, creating a brief, or drafting an article.
 
 Rules:
 
 - Keep replies short, friendly, and low-pressure.
+- On the first message of a mostly blank onboarding flow, use a concise welcome that explains you will help set up the OpenSEO Agent by creating a few files to learn the user's brand voice, strategy, and SEO goals.
 - Ask one small batch of questions at a time.
 - Prefer draft assumptions over broad strategy questions.
 - Invite URLs, docs, or existing copy instead of asking the user to retype everything.
@@ -57,7 +58,8 @@ Rules:
 
 Useful framing:
 
-- "If you already have a website, send it over and I'll draft a first pass from that. If not, I can ask a few quick setup questions instead."
+- "Hi! I'm going to help you get set up with the OpenSEO Agent. We'll create a few files so I can learn your brand voice, strategy, and SEO goals."
+- "If you already have a website, send me the URL and I'll draft a first pass from it. If you don't have a website yet, I can ask you a few quick questions instead. What's your website URL?"
 - "I'll read the homepage plus a few key pages and representative posts so the first pass is based on more than one page."
 - "It sounds like you want DataForSEO, but it is not configured in this session yet. I can walk you through the MCP setup and help wire the workspace config."
 - "Do you want to set up DataForSEO now, or should I remind you about it later?"

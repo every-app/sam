@@ -1,13 +1,13 @@
 # SEO Workbench
 
-SEO Workbench is a small, OpenCode-native workspace for research, drafting, rewriting, and optimization.
+SEO Workbench is a small, OpenCode-native workspace for research, drafting, revision, and review.
 
 The flow is simple:
 
 1. Research a topic into a brief.
-2. Write or rewrite a draft.
-3. Run the JS analyzer for deterministic checks.
-4. Optimize the draft and prepare a handoff if needed.
+2. Draft or revise the article.
+3. Run the JS analyzer for deterministic checks when helpful.
+4. Independently review substantial drafts.
 
 ## OpenCode Usage
 
@@ -18,17 +18,25 @@ cd seo-workbench
 opencode
 ```
 
-Start with `/onboarding` unless you want to jump straight into a task.
+Start with `/onboarding` unless you want to jump straight into a task. The default onboarding opener should ask for the user's website URL and offer quick setup questions if they do not have a site yet.
 
-Available commands:
+The workspace keeps only one slash command on purpose:
 
 - `/onboarding`
-- `/whats-next`
-- `/research <topic>`
-- `/write <topic or brief path>`
-- `/rewrite <existing article path>`
-- `/optimize <draft path>`
-- `/publish <draft path>`
+
+For everything else, ask naturally. Examples:
+
+- "Research open source SEO tools and build a brief."
+- "Write a draft for this topic."
+- "Tighten this intro and add citations."
+- "Review this draft against the context files."
+
+The `seo-guide` agent handles routing. It may use:
+
+- `article-writer` for net-new drafts and major rewrites
+- `seo-reviewer` for independent review after full drafts or major restructures
+
+Substantial draft work means a new full draft, a full-article rewrite, or structural changes across multiple sections. Small local edits stay in the main thread.
 
 If external keyword or SERP data is available, the guide can use it to improve research. DataForSEO via MCP is one good option when you want the highest-confidence data, but the workspace does not depend on it. If you want to set it up, see `docs/dataforseo-mcp-setup.md`.
 
@@ -41,13 +49,13 @@ seo-workbench/
   AGENTS.md
   MEMORY.md
   .opencode/
+  docs/
   context/
   templates/
   scripts/
   research/
   drafts/
   review-required/
-  published/
 ```
 
 ## JS Utilities
@@ -81,7 +89,8 @@ The easiest path is to run `/onboarding`.
 
 ## Design Principles
 
-- Keep orchestration in commands and docs, not hidden prompt magic.
+- Keep onboarding explicit and the rest natural-language.
+- Keep orchestration in `seo-guide` plus durable docs, not a large command surface.
 - Prefer explicit files as outputs.
-- Use subagents for focused review only.
+- Use `article-writer` and `seo-reviewer` when they materially improve quality.
 - Keep integrations optional and replaceable.
