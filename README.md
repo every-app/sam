@@ -1,6 +1,6 @@
-# SEO Workbench
+# openseo-agent
 
-SEO Workbench is a small, OpenCode-native workspace for research, drafting, revision, and review.
+openseo-agent is a small, OpenCode-native workspace for research, drafting, revision, and review.
 
 The flow is simple:
 
@@ -15,7 +15,7 @@ The flow is simple:
 Run OpenCode from this directory:
 
 ```bash
-cd seo-workbench
+cd openseo-agent
 opencode
 ```
 
@@ -43,7 +43,7 @@ If you already have a live site, setup will read more than the homepage so the f
 ## Layout
 
 ```text
-seo-workbench/
+openseo-agent/
   AGENTS.md
   MEMORY.md
   .opencode/
@@ -63,7 +63,7 @@ Analyze a draft:
 node ./scripts/analyze-draft.mjs ./drafts/example.md --keyword "best seo workflow"
 ```
 
-Normalize punctuation and invisible characters:
+Normalize invisible characters and whitespace:
 
 ```bash
 node ./scripts/normalize-draft.mjs ./drafts/example.md

@@ -34,6 +34,22 @@ function stripFrontmatter(content) {
   return content.replace(/^---\n[\s\S]*?\n---(?:\n|$)/, '');
 }
 
+function parseFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---(?:\n|$)/);
+
+  if (!match) {
+    return {};
+  }
+
+  return Object.fromEntries(
+    match[1]
+      .split('\n')
+      .map((line) => line.match(/^([^:]+):\s*(.*)$/))
+      .filter(Boolean)
+      .map(([, key, value]) => [key.trim(), value.trim()]),
+  );
+}
+
 function normalizeBody(content) {
   const normalizedLineEndings = content.replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
   const withoutFrontmatter = stripFrontmatter(normalizedLineEndings);
@@ -81,9 +97,17 @@ for (const pair of agentPairs) {
       readFile(opencodeFile, 'utf8'),
       readFile(claudeFile, 'utf8'),
     ]);
+    const opencodeFrontmatter = parseFrontmatter(opencodeContent);
+    const claudeFrontmatter = parseFrontmatter(claudeContent);
 
     const opencodeBody = normalizeBody(opencodeContent);
     const claudeBody = normalizeBody(claudeContent);
+
+    assert.equal(
+      opencodeFrontmatter.description,
+      claudeFrontmatter.description,
+      `Agent description drift detected for ${pair.name}`,
+    );
 
     if (opencodeBody !== claudeBody) {
       assert.fail(

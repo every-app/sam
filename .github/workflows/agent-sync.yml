@@ -16,5 +16,5 @@ jobs:
         with:
           node-version: lts/*
 
-      - name: Run agent sync test
-        run: node --test tests/agent-sync.test.mjs
+      - name: Run tests
+        run: node --test

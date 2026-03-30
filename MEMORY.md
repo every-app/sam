@@ -1,4 +1,4 @@
-# SEO Workbench Memory
+# openseo-agent Memory
 
 This file tracks setup state and working assumptions so new sessions can orient quickly.
 Update it whenever setup progress or core strategy assumptions change.
