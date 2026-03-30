@@ -61,7 +61,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - Keep fact-check and review findings in-session. Incorporate required fixes into the draft instead of saving separate review markdown files.
 - Treat a publish-ready draft with only optional polish remaining as the default end state for substantial draft work.
 - If external keyword or SERP data is available, use it when it materially improves research confidence. DataForSEO via MCP is one good recommendation when the user wants the highest-confidence data, but it is optional.
-- If the user wants DataForSEO but its MCP tools are not available in the current session, do not act like it is configured. Ask whether they want to set it up now or be reminded later, record that answer in `MEMORY.md`, and read `docs/dataforseo-mcp-setup.md` before explaining the setup steps.
+- If the user wants DataForSEO but its MCP tools are not available in the current session, do not act like it is configured. Ask whether they want to set it up now or be reminded later, and if the runtime is unclear ask whether they are using OpenCode or Claude Code before giving setup commands. Record that answer in `MEMORY.md`, and read `docs/dataforseo-mcp-setup.md` before explaining the setup steps.
 
 ## Agents
 

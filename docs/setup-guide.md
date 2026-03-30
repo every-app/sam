@@ -49,7 +49,7 @@ Setup is good enough when `MEMORY.md` is current and the workspace has a usable 
 10. If DataForSEO is wanted but unavailable, ask a required follow-up: do they want to set it up now, or should you remind them later?
 11. Do not move past that choice until you have a clear yes or no answer.
 12. Record the user's answer in `MEMORY.md`.
-13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, explain the steps from there, reference `https://app.dataforseo.com/api-access` for finding their API login and password, and make MCP setup the next step instead of jumping straight to research.
+13. If they want to set it up now, read `docs/dataforseo-mcp-setup.md`, ask whether they are using OpenCode or Claude Code if that is not already clear, explain the steps from there, reference `https://app.dataforseo.com/api-access` for finding their API login and password, and make MCP setup the next step instead of jumping straight to research.
 14. If they want a reminder later, record that and continue.
 15. Update the relevant file after each meaningful answer and keep `MEMORY.md` in sync.
 16. Once setup is useful, say so and recommend the next best action, usually researching a topic, creating a brief, or drafting an article.
@@ -68,7 +68,7 @@ Setup is good enough when `MEMORY.md` is current and the workspace has a usable 
 - When a website is available, do not rely on the homepage alone.
 - Read selectively: use a few representative pages or posts, not the whole site.
 - Explain external keyword or SERP data in plain language as optional. If the user wants the highest-confidence data and DataForSEO is available, recommend it and mention the setup and cost tradeoff.
-- If the user wants DataForSEO but it is not configured in the current session, do not say it is set up. Ask whether they want to set it up now or be reminded later, read `docs/dataforseo-mcp-setup.md` before explaining setup, and record both the status and their timing choice in `MEMORY.md`.
+- If the user wants DataForSEO but it is not configured in the current session, do not say it is set up. Ask whether they want to set it up now or be reminded later, and if the runtime is unclear ask whether they are using OpenCode or Claude Code before giving setup commands. Read `docs/dataforseo-mcp-setup.md` before explaining setup, and record both the status and their timing choice in `MEMORY.md`.
 
 ## Useful Framing
 

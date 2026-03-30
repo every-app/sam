@@ -66,6 +66,7 @@ When external research data is available:
 If the user wants DataForSEO but it is not available in the current session:
 
 - Say clearly that it is not configured yet.
+- If the runtime is not obvious from the session or repo state, ask whether they are using OpenCode or Claude Code before giving setup commands.
 - Ask whether they want to set it up now or be reminded later.
 - Record that answer in `MEMORY.md`.
 - Read `docs/dataforseo-mcp-setup.md` before explaining the setup steps, and reference `https://app.dataforseo.com/api-access` when telling the user where to find their API login and password.
