@@ -5,6 +5,18 @@
 		"MEMORY.md",
 		"context/user-notes.md"
 	],
+	"mcp": {
+		// TODO: Remove this temporary DataForSEO MCP entry after testing is complete.
+		"dataforseo": {
+			"type": "local",
+			"command": ["npx", "-y", "dataforseo-mcp-server"],
+			"enabled": true,
+			"environment": {
+				"DATAFORSEO_USERNAME": "{env:DATAFORSEO_USERNAME}",
+				"DATAFORSEO_PASSWORD": "{env:DATAFORSEO_PASSWORD}"
+			}
+		}
+	},
 	// "agent": {
 	//   "build": {
 	//     "disable": true,
