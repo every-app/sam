@@ -3,6 +3,7 @@
 import path from "node:path";
 import { analyzeKeyword } from "../lib/analyzers/keyword.mjs";
 import { readMarkdown } from "../lib/analyzers/markdown.mjs";
+import { analyzePublishReadiness } from "../lib/analyzers/publish-readiness.mjs";
 import { analyzeReadability } from "../lib/analyzers/readability.mjs";
 import { analyzeStructure } from "../lib/analyzers/structure.mjs";
 
@@ -18,11 +19,17 @@ if (!filePath) {
 const content = readMarkdown(filePath);
 const readability = analyzeReadability(content);
 const structure = analyzeStructure(content);
+const publishReadiness = analyzePublishReadiness(content);
 const keywordReport = analyzeKeyword(
   content,
   keyword || structure.metadata["Primary Keyword"],
 );
-const summary = buildSummary({ readability, structure, keywordReport });
+const summary = buildSummary({
+  readability,
+  structure,
+  keywordReport,
+  publishReadiness,
+});
 
 console.log(
   JSON.stringify(
@@ -30,6 +37,7 @@ console.log(
       file: path.resolve(filePath),
       readability,
       structure,
+      publishReadiness,
       keyword: keywordReport,
       summary,
     },
@@ -38,7 +46,7 @@ console.log(
   ),
 );
 
-function buildSummary({ readability, structure, keywordReport }) {
+function buildSummary({ readability, structure, keywordReport, publishReadiness }) {
   const issues = [];
   const wins = [];
 
@@ -60,27 +68,32 @@ function buildSummary({ readability, structure, keywordReport }) {
   if (structure.longParagraphs > 0)
     issues.push(`${structure.longParagraphs} very long paragraphs detected.`);
 
+  if (publishReadiness) {
+    issues.push(...publishReadiness.issues);
+    wins.push(...publishReadiness.wins);
+  }
+
   if (keywordReport) {
+    if (keywordReport.occurrences === 0)
+      issues.push("Primary keyword does not appear in the body.");
     if (!keywordReport.inTitle) issues.push("Primary keyword missing from H1.");
     if (!keywordReport.inFirst100Words)
       issues.push("Primary keyword missing from first 100 words.");
-    if (keywordReport.h2Matches === 0)
-      issues.push("Primary keyword missing from H2 headings.");
     if (!keywordReport.inMetaTitle)
       issues.push("Primary keyword missing from meta title.");
     if (!keywordReport.inMetaDescription)
       issues.push("Primary keyword missing from meta description.");
-    if (keywordReport.density < 0.5)
-      issues.push(`Keyword density is low at ${keywordReport.density}%.`);
-    if (keywordReport.density >= 0.8 && keywordReport.density <= 2.2)
-      wins.push(`Keyword density looks healthy at ${keywordReport.density}%.`);
     if (keywordReport.density > 2.5)
       issues.push(
         `Keyword density may be too high at ${keywordReport.density}%.`,
       );
   }
 
-  return { wins, issues };
+  return { wins: unique(wins), issues: unique(issues) };
+}
+
+function unique(items) {
+  return [...new Set(items)];
 }
 
 function parseArgs(args) {

@@ -41,11 +41,13 @@ When doing the work:
 - For net-new article drafts, first present a compact mini-brief with the proposed primary keyword, inferred search intent, suggested angle, working outline, and any source or evidence gaps.
 - After the mini-brief, ask one bundled check-in question for outline preferences, must-use sources, must-cover points, claims to avoid, or other article constraints.
 - Skip that check-in only when the user clearly wants an immediate draft or has already provided the needed direction.
+- Treat research briefs as planning tools. Do not copy internal methodology, selection criteria, or exclusion notes into drafts unless they materially help the reader.
 - Use the `article-writer` subagent for net-new article drafts and major rewrites.
 - Use the `fact-checker` subagent after every new full draft or major rewrite, then route required fixes back through `article-writer`.
 - Use the `seo-reviewer` subagent as the final independent fresh-context reviewer after factual fixes are incorporated.
 - Incorporate required fact-check and review findings into the draft instead of saving review artifacts.
 - Default the loop toward a publish-ready result. Keep revising until the remaining issues are optional polish, unless the draft clearly needs substantial revision.
+- Prefer final editorial prose over satisfying every available SEO note when the tradeoff is real and search intent is still met.
 - Do not trigger the review loop for tiny edits like intro tightening, link additions, or line edits.
 - Handle small edits directly when that is faster and clearer.
 - When a draft exists and the keyword is clear, prefer `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before final optimization advice.

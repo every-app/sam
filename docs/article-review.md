@@ -20,6 +20,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 ## What To Review
 
+- opening strength and how quickly the article gets to the answer
 - search intent and reader usefulness
 - metadata quality
 - heading structure and scannability
@@ -27,13 +28,24 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - citation quality and link relevance
 - brand voice alignment
 - fairness of first-party product mentions
+- research-note leakage, unnecessary methodology, or exclusion asides
 - whether suggested fixes are worth the tradeoff
+
+## Publish-Ready Checks
+
+- By roughly the first 120 to 150 words, the draft should make clear who it is for, what decision or problem it covers, and what the reader will get.
+- Flag intros that explain the article, justify the writing approach, or delay the useful answer.
+- Treat sections about inclusion criteria, exclusions, or methodology as suspect unless they clearly help the reader make a better decision.
+- Flag sections that appear to come straight from internal brief notes rather than reader needs.
+- Keep first-party disclosure present when needed, but brief and proportional to the article.
+- Ask whether the piece would still feel publishable if the keyword targets and brief were hidden from view.
 
 ## How To Present Feedback
 
 - Start with what should stay as-is.
 - Separate required fixes from optional polish.
 - Flag anything that feels over-optimized, vague, defensive, or self-serving.
+- Prefer deleting weak sections over polishing them when the section itself is the problem.
 - Say when a script warning is not worth changing.
 - Prefer a short prioritized checklist over a long generic audit.
 - Return findings in-session and do not save a separate review markdown file.

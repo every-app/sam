@@ -89,6 +89,8 @@ The easiest path is to share your website URL. If you do not have one yet, the g
 - Keep setup and workflow guidance in `seo-guide` plus durable docs, not commands.
 - Prefer explicit files as outputs.
 - Keep fact-check and review findings in-session, and fold required changes back into drafts instead of saving review files.
+- Treat research methodology and exclusion notes as internal unless they directly help the reader make a better decision.
+- Prefer publish-ready reader-first prose over satisfying every possible SEO suggestion.
 - Use `article-writer` and `seo-reviewer` when they materially improve quality.
 - Use `fact-checker` on substantial drafts that need factual verification before the final review.
 - Keep integrations optional and replaceable.

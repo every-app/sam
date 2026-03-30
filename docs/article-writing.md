@@ -19,13 +19,24 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 4. Clarify the search intent and reader problem before outlining.
 5. Use `templates/article-frontmatter.md` for the metadata block.
 6. Open with the main problem and article promise quickly.
-7. Use clear H2s and H3s that help the reader scan and decide.
-8. Favor concrete examples, comparisons, and caveats over filler.
-9. Add external links when they help verify tools, claims, or definitions.
-10. Add internal links only when they are relevant, natural, and supported by context.
-11. Save full drafts to `drafts/<topic-slug>-<YYYY-MM-DD>.md`.
-12. Expect substantial drafts to go through fact-check and final review before they are considered publish-ready.
-13. Incorporate required review feedback directly into the draft rather than saving a separate review file.
+7. Within roughly the first 120 to 150 words, make it clear who the piece is for, what problem or decision it addresses, and what the reader will get.
+8. Use clear H2s and H3s that help the reader scan and decide.
+9. Favor concrete examples, comparisons, and caveats over filler.
+10. Add external links when they help verify tools, claims, or definitions.
+11. Add internal links only when they are relevant, natural, and supported by context.
+12. Save full drafts to `drafts/<topic-slug>-<YYYY-MM-DD>.md`.
+13. Expect substantial drafts to go through fact-check and final review before they are considered publish-ready.
+14. Incorporate required review feedback directly into the draft rather than saving a separate review file.
+
+## Reader-First Draft Rules
+
+- Drafts should read like finished articles for readers, not like process notes for the writer.
+- Treat brief methodology, inclusion filters, star thresholds, and exclusion notes as internal by default.
+- Surface methodology only when it materially helps the reader trust, compare, or use the recommendation.
+- Do not spend the intro explaining why the article exists, why the category is messy, or how the list was assembled.
+- Keep first-party disclosures plain and proportional. They should inform the reader without taking over the opening.
+- Every major section should help the reader choose, act, or understand. Cut sections that only justify the writer's process.
+- If a section would disappear during a strong editorial pass without hurting the reader, it probably does not belong.
 
 ## Rewriting Rules
 
@@ -46,6 +57,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 - Run `node ./scripts/analyze-draft.mjs <path> --keyword "..."` when the draft exists and the keyword is clear.
 - Treat analyzer output as a spot check.
+- Use analyzer warnings about publish readiness to cut or rewrite weak sections, not to force new SEO boilerplate into the draft.
 - Apply only changes that improve clarity, search intent, metadata quality, or linking usefulness.
 - Do not make a change just because the script surfaced it.
 
