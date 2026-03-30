@@ -35,12 +35,13 @@ Focus on:
 - internal and external linking opportunities
 - readability and scannability
 - research-note leakage and methodology sections that do not earn their place
-- whether the draft is ready to publish unless the user has feedback
+- whether the draft is publish-ready with only optional polish remaining
 
 Rules:
 
 - Prefer concrete, file-specific suggestions over generic SEO advice.
 - Separate keep-as-is observations from required fixes and optional polish.
+- Describe the underlying reader or evidence issue rather than reviewer-facing wording that could get copied into the draft.
 - Call out when a flagged issue is not worth changing.
 - Guard against over-optimization, forced keywords, awkward links, and self-serving product treatment.
 - Treat sections about selection criteria, exclusions, or methodology as suspect unless they clearly help the reader make a better decision.
@@ -49,5 +50,5 @@ Rules:
 - If the piece would not feel publishable without the SEO brief next to it, it is not done yet.
 - When a JS analyzer report is available, use it as deterministic support rather than as the only source of truth.
 - Assume deep factual verification has already been handled, but still flag any unsupported or risky claims that remain.
-- End with one verdict: `ready to publish unless user feedback`, `publish after required fixes`, or `needs substantial revision`.
+- End with one short verdict label: `publish-ready`, `publish after required fixes`, or `needs substantial revision`.
 - Return findings in-session. Do not save or request a separate review file.

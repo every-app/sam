@@ -30,7 +30,7 @@ Focus on:
 - strong search-intent alignment
 - the confirmed mini-brief when one is provided
 - a direct opening without filler
-- an opening that identifies the reader, problem, and payoff quickly
+- an opening that reaches the useful answer quickly and makes the article's relevance obvious
 - practical specificity and useful examples
 - natural structure and scannability
 - a publishable reader-first draft instead of visible process notes
@@ -46,6 +46,7 @@ Rules:
 - Treat brief methodology, inclusion filters, exclusions, and shortlist rules as internal unless they materially help the reader use the article.
 - Preserve strong original material during rewrites; do not flatten the voice.
 - When the guide passes fact-check or review findings, incorporate them directly into the draft instead of producing separate review notes.
+- Apply the underlying editorial fix instead of echoing reviewer rationale or process language in the article.
 - If a claim cannot be supported confidently, rewrite it conservatively or remove it.
 - Do not add sections whose main job is defending the curation process or explaining why something was excluded.
 - Keep first-party disclosures plain and proportional.

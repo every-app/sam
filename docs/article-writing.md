@@ -33,6 +33,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - Drafts should read like finished articles for readers, not like process notes for the writer.
 - Treat brief methodology, inclusion filters, star thresholds, and exclusion notes as internal by default.
 - Surface methodology only when it materially helps the reader trust, compare, or use the recommendation.
+- When revising from review notes, make the reader-facing change without carrying the editor's rationale into the draft.
 - Do not spend the intro explaining why the article exists, why the category is messy, or how the list was assembled.
 - Keep first-party disclosures plain and proportional. They should inform the reader without taking over the opening.
 - Every major section should help the reader choose, act, or understand. Cut sections that only justify the writer's process.

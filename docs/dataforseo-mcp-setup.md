@@ -86,12 +86,12 @@ If needed, point them to the official setup guide:
 
 When explaining this to the user, prefer the API access page for actually finding their username and password, and use the official MCP guide as supporting setup reference.
 
-## Suggested wording
+## What To Cover
 
-- "I can wire the DataForSEO MCP config into this workspace for you."
-- "You’ll still need to export your DataForSEO credentials before launching OpenCode."
-- "The easiest path is to copy your API username and password from https://app.dataforseo.com/api-access and export them in your shell."
-- "I recommend not pasting credentials into chat."
+- Offer to wire the DataForSEO MCP config into the workspace if the user wants help.
+- Remind the user that credentials still need to be exported in their shell before launching OpenCode.
+- Point the user to <https://app.dataforseo.com/api-access> to find the API username/login and password.
+- Advise against pasting credentials into chat.
 
 ## Safety notes
 

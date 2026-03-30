@@ -33,7 +33,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 ## Publish-Ready Checks
 
-- By roughly the first 120 to 150 words, the draft should make clear who it is for, what decision or problem it covers, and what the reader will get.
+- By roughly the first 120 to 150 words, the draft should orient the intended reader, the decision or problem at hand, and the practical takeaway.
 - Flag intros that explain the article, justify the writing approach, or delay the useful answer.
 - Treat sections about inclusion criteria, exclusions, or methodology as suspect unless they clearly help the reader make a better decision.
 - Flag sections that appear to come straight from internal brief notes rather than reader needs.
@@ -44,12 +44,13 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 - Start with what should stay as-is.
 - Separate required fixes from optional polish.
+- Describe the underlying reader or evidence problem instead of phrasing feedback in a way that could be copied directly into the article.
 - Flag anything that feels over-optimized, vague, defensive, or self-serving.
 - Prefer deleting weak sections over polishing them when the section itself is the problem.
 - Say when a script warning is not worth changing.
 - Prefer a short prioritized checklist over a long generic audit.
 - Return findings in-session and do not save a separate review markdown file.
-- End with one verdict: `ready to publish unless user feedback`, `publish after required fixes`, or `needs substantial revision`.
+- End with one short verdict label: `publish-ready`, `publish after required fixes`, or `needs substantial revision`.
 
 ## Applying Edits
 
