@@ -20,3 +20,4 @@ Good examples:
 ## Notes
 
 - Add important user guidance here.
+- Workflow: do not save fact-check or review notes as separate markdown files; incorporate required feedback directly into drafts.

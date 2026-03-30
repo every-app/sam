@@ -7,7 +7,8 @@ The flow is simple:
 1. Research a topic into a brief.
 2. Draft or revise the article.
 3. Run the JS analyzer for deterministic checks when helpful.
-4. Independently review substantial drafts.
+4. Fact-check substantial drafts and incorporate required fixes.
+5. Independently review for publish readiness and incorporate required fixes.
 
 ## OpenCode Usage
 
@@ -30,7 +31,8 @@ For everything else, ask naturally. Examples:
 The `seo-guide` agent handles routing. It may use:
 
 - `article-writer` for net-new drafts and major rewrites
-- `seo-reviewer` for independent review after full drafts or major restructures
+- `fact-checker` for factual verification and sourcing on substantial drafts
+- `seo-reviewer` for final independent review after required factual fixes
 
 Substantial draft work means a new full draft, a full-article rewrite, or structural changes across multiple sections. Small local edits stay in the main thread.
 
@@ -51,7 +53,6 @@ seo-workbench/
   scripts/
   research/
   drafts/
-  review-required/
 ```
 
 ## JS Utilities
@@ -87,5 +88,7 @@ The easiest path is to share your website URL. If you do not have one yet, the g
 
 - Keep setup and workflow guidance in `seo-guide` plus durable docs, not commands.
 - Prefer explicit files as outputs.
+- Keep fact-check and review findings in-session, and fold required changes back into drafts instead of saving review files.
 - Use `article-writer` and `seo-reviewer` when they materially improve quality.
+- Use `fact-checker` on substantial drafts that need factual verification before the final review.
 - Keep integrations optional and replaceable.

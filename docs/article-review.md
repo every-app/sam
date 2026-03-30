@@ -1,6 +1,6 @@
 # Article Review Guide
 
-Use this guide for independent article review. Light polish is secondary.
+Use this guide for independent article review. Light polish is secondary, and the goal is a publish-ready draft rather than a saved audit.
 
 Substantial draft work means a new full draft, a full-article rewrite, or structural changes across multiple sections. It does not mean small local edits.
 
@@ -8,6 +8,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 - Review after a new full draft.
 - Review after a substantial restructure or major rewrite.
+- Review after required fact-check changes are already incorporated when a fact-check pass was needed.
 - Skip the independent review loop for tiny edits like sentence trims, link additions, or a small intro cleanup.
 
 ## Review Inputs
@@ -31,14 +32,17 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 ## How To Present Feedback
 
 - Start with what should stay as-is.
-- Separate high-impact fixes from optional polish.
+- Separate required fixes from optional polish.
 - Flag anything that feels over-optimized, vague, defensive, or self-serving.
 - Say when a script warning is not worth changing.
 - Prefer a short prioritized checklist over a long generic audit.
+- Return findings in-session and do not save a separate review markdown file.
+- End with one verdict: `ready to publish unless user feedback`, `publish after required fixes`, or `needs substantial revision`.
 
 ## Applying Edits
 
 - Default to a light pass unless the user clearly wants a deeper rewrite.
 - Preserve strong passages whenever possible.
 - Add internal links only when they truly help the reader.
+- Route required fixes back into the draft immediately rather than parking them in a separate review artifact.
 - Save durable feedback about tone, optimization style, or proof expectations to `context/user-notes.md`.

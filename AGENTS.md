@@ -7,7 +7,8 @@ This project is a standalone, OpenCode-native SEO content workspace.
 1. Research a topic
 2. Build a brief
 3. Draft or revise the article
-4. Independently review substantial drafts
+4. Fact-check substantial drafts and incorporate required fixes
+5. Independently review for final publish readiness and incorporate required fixes
 
 Substantial draft work means a new full draft, a full-article rewrite, or structural changes across multiple sections. It does not mean small local edits.
 
@@ -22,7 +23,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - If context is still blank or placeholder-heavy, begin setup in chat.
 - If a live site exists, read beyond the homepage before drafting setup assumptions.
 - Keep `MEMORY.md` updated when setup progress or core strategy assumptions change.
-- Save outputs in `research/`, `drafts/`, and `review-required/` using lowercase date-stamped slugs.
+- Save outputs in `research/` and `drafts/` using lowercase date-stamped slugs.
 
 ## Load On Demand
 
@@ -54,6 +55,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 - When a draft exists, prefer `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before final optimization advice.
 - Use `node ./scripts/normalize-draft.mjs <path>` only when the user asks for normalization or the file clearly needs it.
+- Keep fact-check and review findings in-session. Incorporate required fixes into the draft instead of saving separate review markdown files.
 - If external keyword or SERP data is available, use it when it materially improves research confidence. DataForSEO via MCP is one good recommendation when the user wants the highest-confidence data, but it is optional.
 - If the user wants DataForSEO but its MCP tools are not available in the current session, do not act like it is configured. Ask whether they want to set it up now or be reminded later, record that answer in `MEMORY.md`, and read `docs/dataforseo-mcp-setup.md` before explaining the setup steps.
 
@@ -61,5 +63,6 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 - `seo-guide` is the user-facing orchestrator.
 - Use `article-writer` for net-new drafts and major rewrites.
-- Use `seo-reviewer` as an independent fresh-context review after new drafts and major restructures.
+- Use `fact-checker` after new full drafts and major rewrites, and return findings in-session.
+- Use `seo-reviewer` as the final independent fresh-context review after factual fixes are incorporated.
 - Skip the review loop for tiny edits.

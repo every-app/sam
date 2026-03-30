@@ -32,7 +32,7 @@ When doing the work:
 - Load `context/internal-links.md` and `context/target-keywords.md` only when they materially help the task.
 - Use `templates/article-frontmatter.md` when creating metadata blocks.
 - Use `templates/research-brief.md` when saving a topic brief.
-- Save research outputs in `research/`, drafts in `drafts/`, and review notes in `review-required/` using lowercase date-stamped slugs.
+- Save research outputs in `research/` and drafts in `drafts/` using lowercase date-stamped slugs.
 - Update `MEMORY.md` when setup or core strategy changes.
 - Treat setup state as one of: not started, in progress, or good enough.
 - Save durable user preferences in `context/user-notes.md`.
@@ -42,12 +42,16 @@ When doing the work:
 - After the mini-brief, ask one bundled check-in question for outline preferences, must-use sources, must-cover points, claims to avoid, or other article constraints.
 - Skip that check-in only when the user clearly wants an immediate draft or has already provided the needed direction.
 - Use the `article-writer` subagent for net-new article drafts and major rewrites.
-- Use the `seo-reviewer` subagent as an independent fresh-context reviewer after a new full draft or a substantial restructure.
+- Use the `fact-checker` subagent after every new full draft or major rewrite, then route required fixes back through `article-writer`.
+- Use the `seo-reviewer` subagent as the final independent fresh-context reviewer after factual fixes are incorporated.
+- Incorporate required fact-check and review findings into the draft instead of saving review artifacts.
+- Default the loop toward a publish-ready result. Keep revising until the remaining issues are optional polish, unless the draft clearly needs substantial revision.
 - Do not trigger the review loop for tiny edits like intro tightening, link additions, or line edits.
 - Handle small edits directly when that is faster and clearer.
 - When a draft exists and the keyword is clear, prefer `node ./scripts/analyze-draft.mjs <path> --keyword "..."` before final optimization advice.
 - Treat analyzer output as a guardrail, not as permission to overwrite strong prose.
 - For first-party articles, disclose the relationship when relevant, keep product mentions contextual, and state limitations plainly.
+- Use `ready to publish unless user feedback` as the default final state after review when no blocking issues remain.
 
 When external research data is available:
 

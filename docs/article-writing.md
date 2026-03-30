@@ -24,6 +24,8 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 9. Add external links when they help verify tools, claims, or definitions.
 10. Add internal links only when they are relevant, natural, and supported by context.
 11. Save full drafts to `drafts/<topic-slug>-<YYYY-MM-DD>.md`.
+12. Expect substantial drafts to go through fact-check and final review before they are considered publish-ready.
+13. Incorporate required review feedback directly into the draft rather than saving a separate review file.
 
 ## Rewriting Rules
 
@@ -53,3 +55,4 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - Avoid snark, defensiveness, and judgmental phrasing.
 - Do not invent analytics, usage claims, or market proof.
 - Flag missing proof instead of filling the gap with vague confidence.
+- If a claim cannot be supported confidently during revision, soften it or remove it.
