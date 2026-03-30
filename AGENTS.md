@@ -42,6 +42,8 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 ## Writing
 
+- For net-new articles, prefer a compact pre-draft mini-brief that states the proposed keyword, likely search intent, suggested angle, working outline, and any source gaps before writing.
+- Ask one bundled user check-in for outline preferences, must-use sources, must-cover points, claims to avoid, or other constraints unless they clearly want an immediate draft.
 - Start strong and match search intent.
 - Keep paragraphs short, specific, and easy to scan.
 - Use concrete examples and natural internal links.

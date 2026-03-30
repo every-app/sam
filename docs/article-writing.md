@@ -13,14 +13,17 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 ## Drafting Workflow
 
-1. Clarify the search intent and reader problem before outlining.
-2. Use `templates/article-frontmatter.md` for the metadata block.
-3. Open with the main problem and article promise quickly.
-4. Use clear H2s and H3s that help the reader scan and decide.
-5. Favor concrete examples, comparisons, and caveats over filler.
-6. Add external links when they help verify tools, claims, or definitions.
-7. Add internal links only when they are relevant, natural, and supported by context.
-8. Save full drafts to `drafts/<topic-slug>-<YYYY-MM-DD>.md`.
+1. For net-new drafts, present a compact mini-brief before drafting: proposed primary keyword, inferred search intent, suggested angle, working outline, and any source or evidence gaps.
+2. Ask one bundled check-in question for outline preferences, must-use sources, must-cover points, claims to avoid, or other constraints.
+3. Skip that pre-draft check-in only when the user clearly wants an immediate draft or has already provided the needed direction.
+4. Clarify the search intent and reader problem before outlining.
+5. Use `templates/article-frontmatter.md` for the metadata block.
+6. Open with the main problem and article promise quickly.
+7. Use clear H2s and H3s that help the reader scan and decide.
+8. Favor concrete examples, comparisons, and caveats over filler.
+9. Add external links when they help verify tools, claims, or definitions.
+10. Add internal links only when they are relevant, natural, and supported by context.
+11. Save full drafts to `drafts/<topic-slug>-<YYYY-MM-DD>.md`.
 
 ## Rewriting Rules
 

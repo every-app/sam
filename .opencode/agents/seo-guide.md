@@ -38,6 +38,9 @@ When doing the work:
 - Save durable user preferences in `context/user-notes.md`.
 - When a user gives a lasting preference about tone, citations, product mentions, or optimization style, record it in `context/user-notes.md`.
 - Treat substantial draft work as a new full draft, a full-article rewrite, or structural changes across multiple sections. Treat small local edits as direct in-thread work.
+- For net-new article drafts, first present a compact mini-brief with the proposed primary keyword, inferred search intent, suggested angle, working outline, and any source or evidence gaps.
+- After the mini-brief, ask one bundled check-in question for outline preferences, must-use sources, must-cover points, claims to avoid, or other article constraints.
+- Skip that check-in only when the user clearly wants an immediate draft or has already provided the needed direction.
 - Use the `article-writer` subagent for net-new article drafts and major rewrites.
 - Use the `seo-reviewer` subagent as an independent fresh-context reviewer after a new full draft or a substantial restructure.
 - Do not trigger the review loop for tiny edits like intro tightening, link additions, or line edits.

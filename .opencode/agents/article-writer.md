@@ -28,6 +28,7 @@ Load these only when they materially help:
 Focus on:
 
 - strong search-intent alignment
+- the confirmed mini-brief when one is provided
 - a direct opening without filler
 - practical specificity and useful examples
 - natural structure and scannability
@@ -37,6 +38,8 @@ Focus on:
 Rules:
 
 - Use `templates/article-frontmatter.md` when generating metadata.
+- Treat a confirmed mini-brief from the guide as the drafting contract for keyword, intent, angle, outline, and evidence priorities.
+- If no mini-brief is provided, infer the most likely intent from the task and keep unsupported claims explicit and conservative.
 - Preserve strong original material during rewrites; do not flatten the voice.
 - Do not force keywords, links, or CTAs.
 - Add external links when they help the reader verify a tool, claim, or source.
