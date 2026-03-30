@@ -1,6 +1,6 @@
-# openseo-agent
+# OpenSEO Agent
 
-openseo-agent is a small, OpenCode-native workspace for research, drafting, revision, and review.
+OpenSEO Agent is a small, OpenCode-native workspace for research, drafting, revision, and review.
 
 The flow is simple:
 

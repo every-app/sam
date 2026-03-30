@@ -1,4 +1,4 @@
-# openseo-agent Memory
+# OpenSEO Agent Memory
 
 This file tracks setup state and working assumptions so new sessions can orient quickly.
 Update it whenever setup progress or core strategy assumptions change.
