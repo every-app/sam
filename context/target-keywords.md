@@ -1,6 +1,6 @@
 # Target Keywords
 
-These can start as agent-suggested working hypotheses during onboarding and get refined later.
+These can start as agent-suggested working hypotheses during setup and get refined later.
 
 Track priority topics here.
 

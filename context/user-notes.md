@@ -9,7 +9,7 @@ Good examples:
 - brand constraints
 - words or claims to avoid
 - preferences about tone or content strategy
-- important reminders that should not live in the onboarding checklist
+- important reminders that should not live in the setup checklist
 
 ## Rules
 

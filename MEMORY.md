@@ -1,7 +1,7 @@
 # SEO Workbench Memory
 
-This file tracks onboarding state and working assumptions so new sessions can orient quickly.
-Update it whenever onboarding progress or core strategy assumptions change.
+This file tracks setup state and working assumptions so new sessions can orient quickly.
+Update it whenever setup progress or core strategy assumptions change.
 
 ## Onboarding Status
 
@@ -42,8 +42,8 @@ Update it whenever onboarding progress or core strategy assumptions change.
 
 ## Recent Progress
 
-- Workspace reset to a neutral starting state for fresh onboarding.
+- Workspace reset to a neutral starting state for fresh setup.
 
 ## Next Recommended Step
 
-- Run `/onboarding` to fill in company context, brand voice, and starter keywords.
+- Continue setup in chat by sharing the website URL or answering a few setup questions.

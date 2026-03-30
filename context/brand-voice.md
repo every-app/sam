@@ -1,7 +1,7 @@
 # Brand Voice
 
 Use this file to capture how the company should sound.
-Replace the placeholders with project-specific guidance during onboarding.
+Replace the placeholders with project-specific guidance during setup.
 
 ## Tone
 

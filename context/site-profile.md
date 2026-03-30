@@ -1,7 +1,7 @@
 # Site Profile
 
 Use this file for company, audience, and offer context.
-Replace the placeholders with project-specific details during onboarding.
+Replace the placeholders with project-specific details during setup.
 
 ## Company
 

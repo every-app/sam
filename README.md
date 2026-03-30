@@ -18,11 +18,7 @@ cd seo-workbench
 opencode
 ```
 
-Start with `/onboarding` unless you want to jump straight into a task. The default onboarding opener should ask for the user's website URL and offer quick setup questions if they do not have a site yet.
-
-The workspace keeps only one slash command on purpose:
-
-- `/onboarding`
+Start by sharing your website URL or your first task. If setup is incomplete, `seo-guide` will guide you through it in chat and create the core context files as it goes.
 
 For everything else, ask naturally. Examples:
 
@@ -40,7 +36,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 
 If external keyword or SERP data is available, the guide can use it to improve research. DataForSEO via MCP is one good option when you want the highest-confidence data, but the workspace does not depend on it. If you want to set it up, see `docs/dataforseo-mcp-setup.md`.
 
-If you already have a live site, onboarding will read more than the homepage so the first pass is grounded in key pages and representative posts.
+If you already have a live site, setup will read more than the homepage so the first pass is grounded in key pages and representative posts.
 
 ## Layout
 
@@ -85,12 +81,11 @@ Optional advanced setup:
 
 - `context/internal-links.md`
 
-The easiest path is to run `/onboarding`.
+The easiest path is to share your website URL. If you do not have one yet, the guide will ask a few lightweight setup questions.
 
 ## Design Principles
 
-- Keep onboarding explicit and the rest natural-language.
-- Keep orchestration in `seo-guide` plus durable docs, not a large command surface.
+- Keep setup and workflow guidance in `seo-guide` plus durable docs, not commands.
 - Prefer explicit files as outputs.
 - Use `article-writer` and `seo-reviewer` when they materially improve quality.
 - Keep integrations optional and replaceable.

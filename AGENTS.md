@@ -17,16 +17,17 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - Do not invent analytics or keyword data unless the user provides it.
 - Prefer explicit files on disk over conversational-only output.
 - Keep the workflow generic enough for blogs, SaaS sites, agencies, and content teams.
-- Use `MEMORY.md` as the source of truth for onboarding status and next steps.
+- Use `MEMORY.md` as the source of truth for setup status and next steps.
 - Treat `context/user-notes.md` as user-owned durable memory.
-- If context is still blank or placeholder-heavy, start with `/onboarding`.
-- If a live site exists, read beyond the homepage before drafting onboarding assumptions.
-- Keep `MEMORY.md` updated when onboarding progress or core strategy assumptions change.
+- If context is still blank or placeholder-heavy, begin setup in chat.
+- If a live site exists, read beyond the homepage before drafting setup assumptions.
+- Keep `MEMORY.md` updated when setup progress or core strategy assumptions change.
 - Save outputs in `research/`, `drafts/`, and `review-required/` using lowercase date-stamped slugs.
 
 ## Load On Demand
 
 - `MEMORY.md`
+- `docs/setup-guide.md`
 - `docs/article-writing.md`
 - `docs/article-review.md`
 - `docs/dataforseo-mcp-setup.md`
