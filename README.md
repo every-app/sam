@@ -3,20 +3,26 @@
 Sam is the best AI content writer. Sam is a minimal, customizable and extendable agent that works with any model. Sam does keyword research, find sources and writes content that is actually good for your blog or website.
 
 Agents built on Claude Code all sound like Claude. OpenAI's GPT 5.4 is my preferred model for writing. GPT 5.4 actually changes its voice based on your preferences and doesn't have the tell-tale sentence structure of Claude. 
+
 ## Who is this for?
-- SEOs & Content Writers - Get more leverage by using the best available model to write drafts that you don't need to babysit or throw out  
+- SEOs & Content Writers - Get more leverage by using the best available model to write drafts that you don't need to babysit or throw out.
 - Founders - Writing content from scratch is extremely tedious. If you're too early to pay a professional, Sam is the next best option for starting to rank for SEO terms relevant to your business.
+
+<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/0a486c47-32df-43e0-81f4-1971574a5871" />
+
 ## What's different?
 - Model Agnostic - Supports OpenCode so that you can use any model including GPT 5.4. It also works with Claude Code.
 - Simple - There are no slash commands or skills. There is a "SEO Guide" agent which walks you through the [Core Workflows](#core-workflows). This agent knows to review all writing against your brand's voice. We provide a minimal agent that is really good at the core research and writing flow which you can customize and extend. 
-- Customizable - If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this. 
+- Customizable - Sam grows with you. If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this.
+
 ## Quickstart
 ### Prerequisites
 - A coding agent subscription.
 	- I recommend a ChatGPT Plus or Pro subscription since GPT 5.4 is my preferred model for writing: https://chatgpt.com/#pricing
 - Claude Code or OpenCode
 	- If you want to use GPT 5.4, use OpenCode. OpenCode is similar to Claude Code, but open source and better. If you want to use a alternative harness, just ask your coding agent to port the repo to support it.
-	- Sa,m will still work great with Claude Code. 
+	- Sam will still work great with Claude Code.
+
 ### Setup
  1. Run the below commands to clone and this project and open it with your coding agent (it will assume the role of "SEO Guide".
  2. Say "hi" and the agent will talk you through onboarding
@@ -32,6 +38,7 @@ cd openseo-agent
 opencode 
 # Or, run `claude`
 ```
+
 ## Core Workflows
 The guiding principle is that Sam should just work without you needing to "learn how to use it". If you don't know what to do next, just ask what your options are. Get started just by saying "hi".
 - Simple Onboarding - No slash commands or skills. Sam will walk you through getting set up via natural language. Just enter your website and the agent will scrape it to understand your company's positioning and brand voice. It will save this as reference for all future research and content.
