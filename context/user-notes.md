@@ -20,5 +20,6 @@ Good examples:
 ## Notes
 
 - Add important user guidance here.
+- Naming: refer to the product and agent as Sam. 
 - Workflow: do not save fact-check or review notes as separate markdown files; incorporate required feedback directly into drafts.
 - Draft preference: new articles should read like final publishable pieces for readers, not like SEO process notes or justifications for methodology and exclusions.

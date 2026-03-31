@@ -1,4 +1,4 @@
-# OpenSEO Agent Rules
+# Sam Rules
 
 This project is a standalone, OpenCode-native SEO content workspace.
 

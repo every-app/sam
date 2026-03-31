@@ -1,4 +1,4 @@
-# OpenSEO Agent Memory
+# Sam Memory
 
 This file tracks setup state and working assumptions so new sessions can orient quickly.
 Update it whenever setup progress or core strategy assumptions change.
@@ -6,7 +6,7 @@ Update it whenever setup progress or core strategy assumptions change.
 ## Onboarding Status
 
 - Overall status: Not started
-- Last updated: 2026-03-28
+- Last updated: 2026-03-31
 
 ### Required Setup Checklist
 
@@ -43,6 +43,7 @@ Update it whenever setup progress or core strategy assumptions change.
 ## Recent Progress
 
 - Workspace reset to a neutral starting state for fresh setup.
+- Naming direction: refer to the yourself as Sam. 
 
 ## Next Recommended Step
 
