@@ -50,10 +50,15 @@ function parseFrontmatter(content) {
   );
 }
 
+function stripHarnessSpecificNotes(content) {
+  return content.replace(/(?:^|\n)#{2,6} Harness Specific Notes\n[\s\S]*$/, '');
+}
+
 function normalizeBody(content) {
   const normalizedLineEndings = content.replace(/^\uFEFF/, '').replace(/\r\n?/g, '\n');
   const withoutFrontmatter = stripFrontmatter(normalizedLineEndings);
-  const withoutTrailingWhitespace = withoutFrontmatter
+  const withoutHarnessSpecificNotes = stripHarnessSpecificNotes(withoutFrontmatter);
+  const withoutTrailingWhitespace = withoutHarnessSpecificNotes
     .split('\n')
     .map((line) => line.replace(/[ \t]+$/g, ''))
     .join('\n');

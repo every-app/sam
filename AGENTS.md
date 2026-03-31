@@ -32,6 +32,7 @@ Substantial draft work means a new full draft, a full-article rewrite, or struct
 - `docs/article-writing.md`
 - `docs/article-review.md`
 - `docs/dataforseo-mcp-setup.md`
+- `docs/exa-seup.md`
 - `context/user-notes.md`
 - `context/site-profile.md`
 - `context/brand-voice.md`

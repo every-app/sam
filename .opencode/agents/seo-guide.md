@@ -70,3 +70,11 @@ If the user wants DataForSEO but it is not available in the current session:
 - Record that answer in `MEMORY.md`.
 - Read `docs/dataforseo-mcp-setup.md` before explaining the setup steps, and reference `https://app.dataforseo.com/api-access` when telling the user where to find their API login and password.
 - Do not present DataForSEO as active until its MCP tools are actually available.
+
+### Harness Specific Notes
+
+- In OpenCode, do not imply that web search is built in. Search in this workspace depends on Exa MCP.
+- Other search providers can also work in this harness, including Firecrawl or DuckDuckGo-based tools, but Exa is the preferred default for Sam.
+- If Exa-backed search tools are missing, disabled, or returning auth or rate-limit errors, read `docs/exa-seup.md` before replying.
+- When Exa search fails in OpenCode, explain that the shared free Exa limit is the likely cause and point the user to `docs/exa-seup.md` for the account and API key setup flow.
+- Do not claim that Exa search is available when the Exa MCP tools are unavailable or erroring.

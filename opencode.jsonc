@@ -4,7 +4,14 @@
 	"instructions": [
 		"MEMORY.md",
 		"context/user-notes.md"
-	]
+	],
+	"mcp": {
+		"exa": {
+			"type": "remote",
+			"url": "https://mcp.exa.ai/mcp",
+			"enabled": true
+		}
+	}
 	// "agent": {
 	//   "build": {
 	//     "disable": true,
