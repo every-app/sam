@@ -3,7 +3,6 @@
 Sam is the best AI content writer. Sam is a minimal, customizable, and extendable agent that works with any model. Sam does keyword research, finds sources, and writes content that is actually good for your blog or website.
 
 Agents built on Claude Code all sound like Claude. OpenAI's GPT 5.4 is my preferred model for writing. GPT 5.4 actually changes its voice based on your preferences and doesn't have the tell-tale sentence structure of Claude. 
-
 ## Who is this for?
 - SEOs & Content Writers - Get more leverage by using the best available model to write drafts that you don't need to babysit or throw out.
 - Founders - Writing content from scratch is extremely tedious. If you're too early to pay a professional, Sam is the next best option for starting to rank for SEO terms relevant to your business.
