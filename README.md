@@ -8,12 +8,12 @@ Agents built on Claude Code all sound like Claude. OpenAI's GPT 5.4 is my prefer
 - SEOs & Content Writers - Get more leverage by using the best available model to write drafts that you don't need to babysit or throw out.
 - Founders - Writing content from scratch is extremely tedious. If you're too early to pay a professional, Sam is the next best option for starting to rank for SEO terms relevant to your business.
 
-<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/0a486c47-32df-43e0-81f4-1971574a5871" />
-
 ## What's different?
 - Model Agnostic - Supports OpenCode so that you can use any model including GPT 5.4. It also works with Claude Code.
 - Simple - There are no slash commands or skills. There is a "SEO Guide" agent which walks you through the [Core Workflows](#core-workflows). This agent knows to review all writing against your brand's voice. We provide a minimal agent that is really good at the core research and writing flow which you can customize and extend. 
-- Customizable - Sam grows with you. If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this.
+- Customizable & Extendable - Sam grows with you. If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this.
+
+<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/0a486c47-32df-43e0-81f4-1971574a5871" />
 
 ## Quickstart
 ### Prerequisites
