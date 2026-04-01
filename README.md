@@ -26,7 +26,7 @@ Use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like ever
 - Customizable & Extendable 
   - Sam grows with you. If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this.
 
-<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/61fae7d3-e0ca-42df-afd4-24e5e0ffded7" />
+<img width="auto" height="400" alt="image" src="https://imagedelivery.net/ysLOa6bzFaM49Jxok-TAlw/68dec245-c364-4835-5d99-abf376256400/public" />
 
 ## Quickstart
 ### Prerequisites
