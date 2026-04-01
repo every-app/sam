@@ -7,8 +7,9 @@ Sam is a minimal, customizable, and extendable content writing agent for blogs a
    - Sam does keyword research, finds sources, and writes content that is actually good for your blog or website.
 - Easy to adapt
    - Lightweight so you can customize and extend it as your workflow grows.
-- Recommended setup
-   - Use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like every other post written by Claude.
+
+*Recommended setup*
+Use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like every other post written by Claude.
 
 ## Who is this for?
 - SEOs & Content Writers 
