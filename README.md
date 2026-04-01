@@ -1,7 +1,10 @@
 # Sam - AI Content Writing Agent
-Cotent writing agents built on Claude Code all sound like Claude. Sam is a minimal, customizable, and extendable agent that works with any model. Sam does keyword research, finds sources, and writes content that is actually good for your blog or website.
+Sam is a minimal, customizable, and extendable content writing agent for blogs and websites.
 
-We recommend using OpenAI's GPT 5.4 + OpenCode so that your content doesn't sound like every other post written by Claude.
+- `Model agnostic`: works with any model, not just Claude.
+- `Built for real content work`: does keyword research, finds sources, and writes content that is actually good for your blog or website.
+- `Easy to adapt`: stays lightweight so you can customize and extend it as your workflow grows.
+- `Recommended setup`: use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like every other post written by Claude.
 
 ## Who is this for?
 - SEOs & Content Writers 
