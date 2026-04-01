@@ -12,6 +12,8 @@ Sam is a minimal, customizable, and extendable content writing agent for blogs a
 
 Use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like every other post written by Claude.
 
+<img width="auto" height="400" alt="image" src="https://imagedelivery.net/ysLOa6bzFaM49Jxok-TAlw/68dec245-c364-4835-5d99-abf376256400/public" />
+
 ## Who is this for?
 - SEOs & Content Writers 
     - Get more leverage by using the best available model to write drafts that you don't need to babysit or throw out.
@@ -25,8 +27,6 @@ Use OpenAI's GPT 5.4 + OpenCode if you want writing that doesn't sound like ever
   - There are no slash commands or skills. There is a "SEO Guide" agent which walks you through the [Core Workflows](#core-workflows). This agent knows to review all writing against your brand's voice. We provide a minimal agent that is really good at the core research and writing flow which you can customize and extend. 
 - Customizable & Extendable 
   - Sam grows with you. If you want to add slash commands, skills, or MCPs to integrate with data provider or publishing platforms, just ask the Agent how to update the code to achieve this.
-
-<img width="auto" height="400" alt="image" src="https://imagedelivery.net/ysLOa6bzFaM49Jxok-TAlw/68dec245-c364-4835-5d99-abf376256400/public" />
 
 ## Quickstart
 ### Prerequisites
