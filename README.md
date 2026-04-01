@@ -23,8 +23,8 @@ We recommend using OpenAI's GPT 5.4 + OpenCode so that your content doesn't soun
 	- Sam will still work great with Claude Code.
 
 ### Setup
- 1. Run the below commands to clone and this project and open it with your coding agent (it will assume the role of "SEO Guide".
- 2. Say "hi" and the agent will talk you through onboarding
+1. Run the commands below to clone this project and open it with your coding agent. It will assume the role of "SEO Guide".
+2. Say "hi" and the agent will talk you through onboarding.
 
 ```
 # Clone the project
@@ -33,8 +33,12 @@ git clone https://github.com/every-app/sam
 # Switch to the directory
 cd sam
 
+# If you're using OpenCode, authenticate with OpenAI if you want to use GPT 5.4
+opencode auth login
+
 # Open the agent
 opencode 
+
 # Or, run `claude`
 ```
 
