@@ -44,6 +44,9 @@ opencode
 
 ## Core Workflows
 The guiding principle is that Sam should just work without you needing to "learn how to use it". If you don't know what to do next, just ask what your options are. Get started just by saying "hi".
-- Simple Onboarding - No slash commands or skills. Sam will walk you through getting set up via natural language. Just enter your website and the agent will scrape it to understand your company's positioning and brand voice. It will save this as reference for all future research and content.
-- Research - Tell Sam content ideas you have or ask it to suggest what to write after doing research. Connect arbitrary MCPs such as [DataForSEO](https://dataforseo.com) so that it has access to the highest quality data for making recommendations. It will use web search and scraping to understand what is already written on these topics. 
-- Writing - Tell Sam what you want it to write. It will research the topic, write a draft, then trigger subagents to review that draft for 1. quality 2. fact checking and sourcing, then apply the fixes. This loop is much slower than other agents, but its goal is to be set it and forget, aiming for something high quality on the first attempt. 
+- Simple Onboarding 
+  - No slash commands or skills. Sam will walk you through getting set up via natural language. Just enter your website and the agent will scrape it to understand your company's positioning and brand voice. It will save this as reference for all future research and content.
+- Research 
+  - Tell Sam content ideas you have or ask it to suggest what to write after doing research. Connect arbitrary MCPs such as [DataForSEO](https://dataforseo.com) so that it has access to the highest quality data for making recommendations. It will use web search and scraping to understand what is already written on these topics. 
+- Writing 
+  - Tell Sam what you want it to write. It will research the topic, write a draft, then trigger subagents to review that draft for 1. quality 2. fact checking and sourcing, then apply the fixes. This loop is much slower than other agents, but its goal is to be set it and forget, aiming for something high quality on the first attempt. 
